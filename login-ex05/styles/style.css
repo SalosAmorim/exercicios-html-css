@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'discord-regular';
+    src: url(../fonts/gg\ sans\ Regular.ttf);
+}
+@font-face {
+    font-family: 'discord';
+    src: url(../fonts/gg\ sans\ Medium.ttf);
+}
+@font-face {
+    font-family: 'discord-semi';
+    src: url(../fonts/gg\ sans\ Semibold.ttf);
+}
+@font-face {
+    font-family: 'discord-bold';
+    src: url(../fonts/gg\ sans\ Bold.ttf);
+}
+@font-face {
+    font-family: 'discord-logo';
+    src: url(../fonts/Lemon\ Days.ttf);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'discord';
+}
+
+header{
+    display: none;
+}
+
+
+section#login-main{
+    background-color: #323338;
+    width: 100vw;
+    height: 100vh;
+}
+
+section#login-main > h1{
+    color: #ebebeb;
+    font-family: 'discord-bold';
+    font-weight: 100;
+    text-align: center;
+    padding-top: 15px;
+    margin-bottom: 16px;
+}
+section#login-main > h2{
+    color: #ebebeb;
+    font-family: 'discord-semi';
+    text-align: center;
+    margin-bottom: 8px;
+}
+section#login-main > p{
+    display: none;
+}
+
+form{
+    padding: 0px 20px;
+}
+form > label{
+    display: inline-block;
+    color: #d4d4d4;
+    font-family: 'discord-bold';
+    font-size: .71em;
+    margin-top: 30px;
+}
+form > label > strong{
+    color: #f17873;
+}
+form > input{
+    border-radius: 8px;
+    width: 100%;
+    height: 40px;
+    background-color: #28292e;
+    border: 1.5px solid #3e3f44;
+    color: #ebebeb;
+    margin-top: 5px;
+}
+form > p{
+    color: #d4d4d4;
+    font-family: 'discord-regular';
+    font-size: 14px;
+    margin-top: 5px;
+    padding-bottom: 20px;
+}
+form #isubmit{
+    background-color: #5864f4;
+    font-family: 'discord-semi';
+    font-size: 1em;
+    height: 45px;
+    margin: 0px;
+    margin-bottom: 5px;
+}
+form #isubmit:hover{
+    background-color: #4654C0;
+}
+
+a{
+    color: #7a8cca;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+section#login-extra{
+    display: none;
+}
+
+footer{
+    position: absolute;
+    width: 100vw;
+    transform: translate(-50%, -100%);
+    top: 100%;
+    left: 50%;
+    text-align: center;
+    font-size: .8em;
+    background-color: #28292e;
+    color: #d4d4d4;
+    padding: 10px 0px;
+}
