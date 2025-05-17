@@ -29,20 +29,18 @@
         transform: translate(-50%, -50%);
         top: 50%;
         left: 50%;
+        height: fit-content;
+        width: fit-content;
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.397);
+        padding: 32px;
+    }
+    section#login-main{
+        width: 416px;
     }
 
-    section#login-main{
-        width: 450px;
-        height: fit-content;
-        margin: auto;
-        border-radius: 10px;
-        box-shadow: 6px 3px 10px 1px rgba(0, 0, 0, 0.3);
-    }
     section#login-main > h1{
         display: none;
-    }
-    section#login-main > h2{
-        padding-top: 16px;
     }
     section#login-main > p{
         display: block;
@@ -55,29 +53,21 @@
 }
 
 @media screen and (min-width: 769px) {
-    section#login-main{
-        width: 450px;
-        display: inline-block;
-        border-bottom-right-radius: 0px;
-        border-top-right-radius: 0px;
+    #verticalDivider{
+        width: 40px;
+        height: 100%;
     }
 
     section#login-extra{
-        display: inline;
+        display: inline-block;
         width: 240px;
-        background-color: #323338;
-        padding-right: 20px;
-        padding-left: 20px;
-        border-bottom-right-radius: 10px;
-        border-top-right-radius: 10px;
-        box-shadow: 9px 3px 10px 1px rgba(0, 0, 0, 0.3);
     }
     section#login-extra > p > img{
         width: 170px;
-        display: inline;
+        display: inline-block;
         margin: auto;
         border-radius: 5px;
-        margin-top: 32px;
+        padding-bottom: 10px;
     }
     section#login-extra > h2{
         color: #ebebeb;
@@ -88,7 +78,6 @@
     section#login-extra > p{
         color: #ebebeb;
         text-align: center;
-        margin-bottom: 8px;
         font-size: 16px;
     }
 }
