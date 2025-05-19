@@ -10,10 +10,14 @@
 }
 
 @media screen and (min-width: 500px) {
+    body{
+        background-color: rgba(0, 0, 0, 0.4);
+    }
     html{
-        background-image: radial-gradient(circle at 30% 70%, #2e2da4, #6300F0 70%);
-        width: 100vw;
-        height: 100vh;
+        background-image: url(../images/background-2.png);
+        background-size: cover;
+        background-position: center left 20%;
+        background-color: black;
     }
     header{
         display: block;
