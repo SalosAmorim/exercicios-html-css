@@ -28,19 +28,21 @@
     box-sizing: border-box;
 }
 
-header{
-    display: none;
-}
-
 body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
+
+header{
+    display: none;
+    flex: 0;
+}
+
 main{
     flex: 1;
+    display: flex;
 }
-header, footer { flex: 0; }
 
 
 #container{
@@ -119,11 +121,8 @@ section#login-extra{
 }
 
 footer{
-    position: absolute;
+    flex: 0;
     width: 100vw;
-    transform: translate(-50%, -100%);
-    top: 100%;
-    left: 50%;
     text-align: center;
     font-size: .8em;
     background-color: #28292e;
