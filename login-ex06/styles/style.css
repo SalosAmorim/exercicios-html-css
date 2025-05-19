@@ -32,8 +32,18 @@ header{
     display: none;
 }
 
-
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 main{
+    flex: 1;
+}
+header, footer { flex: 0; }
+
+
+#container{
     background-color: #323338;
     width: 100vw;
     height: 100vh;
